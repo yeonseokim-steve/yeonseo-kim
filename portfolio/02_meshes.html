@@ -11,7 +11,7 @@
     <!-- Help auto scale for desktop & mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>STUDENT TODO Website</title>
+    <title>Yeonseo Kim - Procedural Meshes</title>
 
     <!-- Normalize the difference across browsers  https://necolas.github.io/normalize.css/ -->
     <link rel="stylesheet" href="../external/normalize.css">
@@ -66,22 +66,23 @@
             Project <strong>Procedural Geometric Modeling</strong>
         </h1>
         <p class="section__subtitle section__subtitle--intro">3D Graphics</p>
-        <img src="../img/portfolio_thumbnails/02_meshes.jpg" alt="a picture of this portfolio item" class="intro__img">
+        <img src="../img/portfolio_thumbnails/02_meshes.png" alt="a picture of this portfolio item" class="intro__img">
     </section>
 
     <div class="portfolio-item-individual">
         <h2>Project Overview</h2>
-        <p>Provide a brief description of the project, its purpose, and what you aimed to achieve.</p>
+        <p>This project implements procedural geometry generation for various 3D shapes, including planes, cubes, spheres, toruses, cylinders, and cones. The aim was to construct these shapes algorithmically using vertices, indices, and math functions, avoiding hand-modeled geometry.</p>
 
         <h2>Tasks Completed</h2>
         <ul>
-            <li>Describe the tasks you completed for this project.</li>
-            <li>Be specific about your contributions and the technologies used.</li>
+            <li>Implemented a generalized plane and index buffer generator for procedural surfaces.</li>
+            <li>Created 3D parametric shapes: Sphere, Torus, Cylinder, and Cone using trigonometric functions.</li>
+            <li>Implemented a custom lines-pattern generator to render meshes in wireframe mode dynamically.</li>
+            <li>Integrated the procedural meshes into an interactive WebGL demo using OpenGL abstractions.</li>
         </ul>
 
         <h2>Reflection</h2>
-        <p>Reflect on the project, discussing any challenges faced, solutions implemented, and what you learned from the
-            experience.</p>
+        <p>Generating complex 3D shapes parametrically was an excellent exercise in applied mathematics for graphics. Ensuring that index buffers correctly connected grid points required careful attention to topology. Implementing caps for the cylinder and cone shapes using the `add_cap` function was particularly challenging but ultimately rewarding when the shapes rendered flawlessly.</p>
     </div>
 
     <div class="portfolio-item-individual">
